@@ -1,67 +1,52 @@
 
 ANOVA results for total absorbedPAR: 
                         sum_sq     df           F  PR(>F)
-C(architecture)  2.254124e+06    5.0  265.915364  <0.001
-Residual         1.007049e+06  594.0         NaN     NaN 
+C(architecture)  1.436942e+06    4.0  196.477375  <0.001
+Residual         9.050483e+05  495.0         NaN     NaN 
 
 Model summary: 
                               OLS Regression Results                              
 ==================================================================================
-Dep. Variable:     absorbedPAR_umol_m2_s1   R-squared:                       0.691
-Model:                                OLS   Adj. R-squared:                  0.689
-Method:                     Least Squares   F-statistic:                     265.9
-Date:                    Fri, 04 Oct 2024   Prob (F-statistic):          6.06e-149
-Time:                            10:18:56   Log-Likelihood:                -3079.0
-No. Observations:                     600   AIC:                             6170.
-Df Residuals:                         594   BIC:                             6196.
-Df Model:                               5                                         
+Dep. Variable:     absorbedPAR_umol_m2_s1   R-squared:                       0.614
+Model:                                OLS   Adj. R-squared:                  0.610
+Method:                     Least Squares   F-statistic:                     196.5
+Date:                    Fri, 04 Oct 2024   Prob (F-statistic):          9.73e-101
+Time:                            13:19:42   Log-Likelihood:                -2584.8
+No. Observations:                     500   AIC:                             5180.
+Df Residuals:                         495   BIC:                             5201.
+Df Model:                               4                                         
 Covariance Type:                nonrobust                                         
 ====================================================================================================
                                        coef    std err          t      P>|t|      [0.025      0.975]
 ----------------------------------------------------------------------------------------------------
-Intercept                         1177.4717      4.117    285.969      0.000    1169.385    1185.558
-C(architecture)[T.architectureB]    62.8070      5.823     10.786      0.000      51.371      74.243
-C(architecture)[T.architectureC]   -76.9562      5.823    -13.216      0.000     -88.392     -65.520
-C(architecture)[T.architectureD]    69.3108      5.823     11.903      0.000      57.875      80.747
-C(architecture)[T.architectureE]   -80.4443      5.823    -13.815      0.000     -91.881     -69.008
-C(architecture)[T.control]          37.7476      5.823      6.482      0.000      26.311      49.184
+Intercept                         1177.4717      4.276    275.370      0.000    1169.070    1185.873
+C(architecture)[T.architectureB]    62.8070      6.047     10.386      0.000      50.926      74.688
+C(architecture)[T.architectureC]   -76.9562      6.047    -12.726      0.000     -88.837     -65.075
+C(architecture)[T.architectureD]    69.3108      6.047     11.462      0.000      57.430      81.192
+C(architecture)[T.control]          37.7476      6.047      6.242      0.000      25.866      49.629
 ==============================================================================
-Omnibus:                        4.725   Durbin-Watson:                   1.960
-Prob(Omnibus):                  0.094   Jarque-Bera (JB):                5.717
-Skew:                          -0.065   Prob(JB):                       0.0574
-Kurtosis:                       3.460   Cond. No.                         6.85
+Omnibus:                        3.558   Durbin-Watson:                   1.930
+Prob(Omnibus):                  0.169   Jarque-Bera (JB):                4.036
+Skew:                          -0.056   Prob(JB):                        0.133
+Kurtosis:                       3.426   Cond. No.                         5.83
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 Descriptive statistics:        repetition  absorbedPAR_umol_m2_s1  area_m2[m^2]
-count  600.000000              600.000000    600.000000
-mean    50.500000             1179.549194      0.045861
-std     28.890155               73.785921      0.000033
-min      1.000000             1024.549502      0.045769
-25%     25.750000             1117.546568      0.045839
-50%     50.500000             1183.140148      0.045861
-75%     75.250000             1238.714108      0.045884
-max    100.000000             1357.121138      0.045952 
+count  500.000000              500.000000    500.000000
+mean    50.500000             1196.053557      0.045860
+std     28.894979               68.508150      0.000033
+min      1.000000             1027.456091      0.045777
+25%     25.750000             1147.325882      0.045838
+50%     50.500000             1205.931255      0.045861
+75%     75.250000             1246.373860      0.045883
+max    100.000000             1357.121138      0.045948 
 
 Post-hoc (Tukeyhsd) Results:
-          Multiple Comparison of Means - Tukey HSD, FWER=0.05          
-=======================================================================
-    group1        group2     meandiff p-adj    lower     upper   reject
------------------------------------------------------------------------
-architectureA architectureB    62.807    0.0   46.1587   79.4552   True
-architectureA architectureC  -76.9562    0.0  -93.6044  -60.3079   True
-architectureA architectureD   69.3108    0.0   52.6626   85.9591   True
-architectureA architectureE  -80.4443    0.0  -97.0926  -63.7961   True
-architectureA       control   37.7476    0.0   21.0994   54.3959   True
-architectureB architectureC -139.7631    0.0 -156.4114 -123.1149   True
-architectureB architectureD    6.5039 0.8744  -10.1444   23.1521  False
-architectureB architectureE -143.2513    0.0 -159.8995 -126.6031   True
-architectureB       control  -25.0593 0.0003  -41.7076   -8.4111   True
-architectureC architectureD   146.267    0.0  129.6188  162.9153   True
-architectureC architectureE   -3.4882 0.9911  -20.1364   13.1601  False
-architectureC       control  114.7038    0.0   98.0555   131.352   True
-architectureD architectureE -149.7552    0.0 -166.4034 -133.1069   True
-architectureD       control  -31.5632    0.0  -48.2115   -14.915   True
-architectureE       control  118.1919    0.0  101.5437  134.8402   True
------------------------------------------------------------------------
+              architectureA architectureB architectureC architectureD control
+architectureA         1.000         1.000         1.000         1.000   1.000
+architectureB         1.000         1.000         1.000         0.000   1.000
+architectureC         1.000         1.000         1.000         1.000   1.000
+architectureD         1.000         0.000         1.000         1.000   1.000
+control               1.000         1.000         1.000         1.000   1.000

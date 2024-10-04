@@ -43,7 +43,8 @@ def process_anova(input_file, output_anova, output_assumptions, qqplot_path):
         # Post-hoc test (TukeyHSD).
     if model.f_pvalue < 0.05:  # Check if the overall model is significant.
         posthoc = sp.posthoc_tukey_hsd(data['absorbedPAR_umol_m2_s1'], data['architecture'])
-        posthoc = posthoc.map(lambda x: f"{x:.3f}")
+        posthoc.to_csv(output_anova.split('.')[0].replace('ANOVA','Tukey_HSD')+'.csv', index=False) #Name needs to be chnged
+        posthoc = posthoc.map(lambda x: f"{x:.3f}") ##??
         anova_output.write(f'\nPost-hoc (Tukeyhsd) Results:\n{posthoc}\n')
 
         # Assumption Checks: Levene's Test and Shapiro-Wilk Test for normality

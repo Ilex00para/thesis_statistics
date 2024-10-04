@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import statsmodels.api as sm
 import scikit_posthocs as sp
 from statsmodels.formula.api import ols
@@ -112,19 +113,33 @@ def calculate_statistics(data):
 mean_values_high = calculate_statistics(data_high)
 mean_values_low = calculate_statistics(data_low)
 
+def significance_letters(dataframe: pd.DataFrame) -> pd.DataFrame:
+    letter = ord('a')
+    for i in range(len(dataframe)):
+        dataframe.iloc[i,i] = 0
+        dataframe.iloc[i,:i] = [1 for x in dataframe.iloc[i,:i]]
+        dataframe.iloc[i,:] = [chr(letter) if x == 0 else '' for x in dataframe.iloc[i,:]]
+        letter += 1
+
+    return dataframe[:-1]
+
+
 # Plotting function to avoid repetition
 def barplot_absorbedPAR(mean_values, density_label, output_file):
     fig, ax = plt.subplots(figsize=(10, 6))
-    
+    significants =  significance_letters(pd.read_csv(f'output_statistics\Tukey_HSD_{density_label.lower()}_ranks.csv'))
+    print(significants)
     # Plotting lineplot for each architecture type within the current density
     for architecture in mean_values['architecture'].unique():
         architecture_data = mean_values[mean_values['architecture'] == architecture]
         ax.bar(architecture_data['architecture'], architecture_data['mean'], yerr=architecture_data['std_dev'], 
         width=0.5, edgecolor='black', linewidth=0.5, capsize=5, color='green')
+        ax.text(architecture_data['architecture'], architecture_data['mean'] + architecture_data['std_dev']+ 50, s="".join(significants.loc[:,architecture].values), ha='center', va='bottom', fontsize=12)
 
     # Set the title and labels
     ax.set_title(f'Total Absorbed PAR for {density_label} density')
     ax.set_xlabel('Architecture')
+    ax.set_ylim(0, 1200)
     ax.set_ylabel('Absorbed PAR (umol m-2 s-1)')
 
     plt.savefig(output_file)

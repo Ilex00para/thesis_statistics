@@ -1,270 +1,58 @@
 
 ANOVA results for rank 1:
-                       sum_sq     df           F  PR(>F)
-C(architecture)  14893.687974    5.0  223.106365  <0.001
-Residual          7930.612533  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 1:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB   2.7393    0.0   1.2619   4.2167   True
-architectureA architectureC  10.3137    0.0   8.8363  11.7911   True
-architectureA architectureD  -0.8772  0.534  -2.3546   0.6002  False
-architectureA architectureE  -6.3984    0.0  -7.8758   -4.921   True
-architectureA       control   0.9736 0.4129  -0.5037    2.451  False
-architectureB architectureC   7.5744    0.0    6.097   9.0518   True
-architectureB architectureD  -3.6165    0.0  -5.0939  -2.1391   True
-architectureB architectureE  -9.1377    0.0 -10.6151  -7.6603   True
-architectureB       control  -1.7657 0.0088  -3.2431  -0.2883   True
-architectureC architectureD -11.1909    0.0 -12.6682  -9.7135   True
-architectureC architectureE -16.7121    0.0 -18.1895 -15.2347   True
-architectureC       control    -9.34    0.0 -10.8174  -7.8626   True
-architectureD architectureE  -5.5212    0.0  -6.9986  -4.0439   True
-architectureD       control   1.8508 0.0049   0.3734   3.3282   True
-architectureE       control   7.3721    0.0   5.8947   8.8495   True
---------------------------------------------------------------------
+                      sum_sq     df          F  PR(>F)
+C(architecture)  8101.158532    4.0  132.23406  <0.001
+Residual         7581.392928  495.0        NaN     NaN
 
 ANOVA results for rank 2:
                       sum_sq     df           F  PR(>F)
-C(architecture)  5018.209466    5.0  151.632472  <0.001
-Residual         3931.633354  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 2:
-       Multiple Comparison of Means - Tukey HSD, FWER=0.05        
-==================================================================
-    group1        group2    meandiff p-adj   lower   upper  reject
-------------------------------------------------------------------
-architectureA architectureB    2.522    0.0  1.4817  3.5622   True
-architectureA architectureC   7.4102    0.0  6.3699  8.4504   True
-architectureA architectureD  -1.0605 0.0427 -2.1007 -0.0202   True
-architectureA architectureE  -0.7839  0.261 -1.8241  0.2564  False
-architectureA       control   1.0646 0.0414  0.0244  2.1048   True
-architectureB architectureC   4.8882    0.0  3.8479  5.9284   True
-architectureB architectureD  -3.5824    0.0 -4.6227 -2.5422   True
-architectureB architectureE  -3.3058    0.0 -4.3461 -2.2656   True
-architectureB       control  -1.4574  0.001 -2.4976 -0.4171   True
-architectureC architectureD  -8.4706    0.0 -9.5109 -7.4304   True
-architectureC architectureE   -8.194    0.0 -9.2343 -7.1538   True
-architectureC       control  -6.3455    0.0 -7.3858 -5.3053   True
-architectureD architectureE   0.2766 0.9739 -0.7636  1.3168  False
-architectureD       control   2.1251    0.0  1.0849  3.1653   True
-architectureE       control   1.8485    0.0  0.8083  2.8887   True
-------------------------------------------------------------------
+C(architecture)  4378.281512    4.0  159.552464  <0.001
+Residual         3395.825566  495.0         NaN     NaN
 
 ANOVA results for rank 3:
-                      sum_sq     df           F  PR(>F)
-C(architecture)  12566.93887    5.0  144.312441  <0.001
-Residual         10345.27809  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 3:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB   4.5274    0.0   2.8401   6.2148   True
-architectureA architectureC    8.887    0.0   7.1996  10.5744   True
-architectureA architectureD  -1.1239 0.4004  -2.8113   0.5635  False
-architectureA architectureE  -5.6706    0.0   -7.358  -3.9833   True
-architectureA       control   2.6827 0.0001   0.9953   4.3701   True
-architectureB architectureC   4.3595    0.0   2.6721   6.0469   True
-architectureB architectureD  -5.6514    0.0  -7.3387   -3.964   True
-architectureB architectureE -10.1981    0.0 -11.8855  -8.5107   True
-architectureB       control  -1.8447 0.0228  -3.5321  -0.1573   True
-architectureC architectureD -10.0109    0.0 -11.6983  -8.3235   True
-architectureC architectureE -14.5576    0.0  -16.245 -12.8702   True
-architectureC       control  -6.2043    0.0  -7.8916  -4.5169   True
-architectureD architectureE  -4.5467    0.0  -6.2341  -2.8593   True
-architectureD       control   3.8066    0.0   2.1192    5.494   True
-architectureE       control   8.3534    0.0    6.666  10.0407   True
---------------------------------------------------------------------
+                       sum_sq     df          F  PR(>F)
+C(architecture)   6309.672277    4.0  77.784828  <0.001
+Residual         10038.229298  495.0        NaN     NaN
 
 ANOVA results for rank 4:
-                       sum_sq     df           F  PR(>F)
-C(architecture)  24380.373438    5.0  116.673916  <0.001
-Residual         24824.643371  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 4:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB   4.7954    0.0   2.1815   7.4092   True
-architectureA architectureC  10.9762    0.0   8.3623  13.5901   True
-architectureA architectureD  -4.4751    0.0   -7.089  -1.8612   True
-architectureA architectureE  -8.3301    0.0 -10.9439  -5.7162   True
-architectureA       control   4.4933    0.0   1.8794   7.1071   True
-architectureB architectureC   6.1808    0.0   3.5669   8.7947   True
-architectureB architectureD  -9.2705    0.0 -11.8843  -6.6566   True
-architectureB architectureE -13.1254    0.0 -15.7393 -10.5116   True
-architectureB       control  -0.3021 0.9995   -2.916   2.3118  False
-architectureC architectureD -15.4513    0.0 -18.0652 -12.8374   True
-architectureC architectureE -19.3062    0.0 -21.9201 -16.6924   True
-architectureC       control  -6.4829    0.0  -9.0968   -3.869   True
-architectureD architectureE   -3.855 0.0004  -6.4688  -1.2411   True
-architectureD       control   8.9684    0.0   6.3545  11.5822   True
-architectureE       control  12.8233    0.0  10.2095  15.4372   True
---------------------------------------------------------------------
+                       sum_sq     df          F  PR(>F)
+C(architecture)  13382.512107    4.0  70.771508  <0.001
+Residual         23400.460338  495.0        NaN     NaN
 
 ANOVA results for rank 5:
-                       sum_sq     df           F  PR(>F)
-C(architecture)  71755.139598    5.0  157.914498  <0.001
-Residual         53981.810852  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 5:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB  -0.0596    1.0  -3.9141   3.7949  False
-architectureA architectureC  14.3087    0.0  10.4542  18.1632   True
-architectureA architectureD -10.3862    0.0 -14.2407  -6.5318   True
-architectureA architectureE  -17.195    0.0 -21.0495 -13.3405   True
-architectureA       control  10.5161    0.0   6.6616  14.3706   True
-architectureB architectureC  14.3682    0.0  10.5137  18.2227   True
-architectureB architectureD -10.3267    0.0 -14.1812  -6.4722   True
-architectureB architectureE -17.1355    0.0 -20.9899  -13.281   True
-architectureB       control  10.5757    0.0   6.7212  14.4302   True
-architectureC architectureD -24.6949    0.0 -28.5494 -20.8404   True
-architectureC architectureE -31.5037    0.0 -35.3582 -27.6492   True
-architectureC       control  -3.7925 0.0568   -7.647   0.0619  False
-architectureD architectureE  -6.8088    0.0 -10.6633  -2.9543   True
-architectureD       control  20.9024    0.0  17.0479  24.7569   True
-architectureE       control  27.7111    0.0  23.8567  31.5656   True
---------------------------------------------------------------------
+                       sum_sq     df          F  PR(>F)
+C(architecture)  38185.336065    4.0  94.928205  <0.001
+Residual         49779.044429  495.0        NaN     NaN
 
 ANOVA results for rank 6:
-                        sum_sq     df          F  PR(>F)
-C(architecture)   61360.945952    5.0  70.123534  <0.001
-Residual         103954.834114  594.0        NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 6:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB -14.4123    0.0 -19.7612  -9.0634   True
-architectureA architectureC  -1.1449 0.9902  -6.4939    4.204  False
-architectureA architectureD -19.2741    0.0  -24.623 -13.9252   True
-architectureA architectureE -23.9257    0.0 -29.2747 -18.5768   True
-architectureA       control   1.7154 0.9422  -3.6335   7.0644  False
-architectureB architectureC  13.2674    0.0   7.9185  18.6163   True
-architectureB architectureD  -4.8618 0.0991 -10.2107   0.4871  False
-architectureB architectureE  -9.5134    0.0 -14.8623  -4.1645   True
-architectureB       control  16.1278    0.0  10.7789  21.4767   True
-architectureC architectureD -18.1292    0.0 -23.4781 -12.7803   True
-architectureC architectureE -22.7808    0.0 -28.1297 -17.4319   True
-architectureC       control   2.8604 0.6457  -2.4885   8.2093  False
-architectureD architectureE  -4.6516 0.1298 -10.0005   0.6973  False
-architectureD       control  20.9896    0.0  15.6407  26.3385   True
-architectureE       control  25.6412    0.0  20.2923  30.9901   True
---------------------------------------------------------------------
+                       sum_sq     df          F  PR(>F)
+C(architecture)  36412.759862    4.0  49.601174  <0.001
+Residual         90846.216642  495.0        NaN     NaN
 
 ANOVA results for rank 7:
                         sum_sq     df          F  PR(>F)
-C(architecture)   83536.995837    5.0  74.825394  <0.001
-Residual         132631.378184  594.0        NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 7:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB -22.1421    0.0 -28.1839 -16.1003   True
-architectureA architectureC -20.9902    0.0  -27.032 -14.9484   True
-architectureA architectureD -10.7387    0.0 -16.7804  -4.6969   True
-architectureA architectureE -17.5072    0.0  -23.549 -11.4654   True
-architectureA       control -38.8111    0.0 -44.8529 -32.7693   True
-architectureB architectureC   1.1519 0.9942  -4.8899   7.1937  False
-architectureB architectureD  11.4035    0.0   5.3617  17.4453   True
-architectureB architectureE    4.635 0.2423  -1.4068  10.6767  False
-architectureB       control -16.6689    0.0 -22.7107 -10.6271   True
-architectureC architectureD  10.2516    0.0   4.2098  16.2934   True
-architectureC architectureE    3.483 0.5668  -2.5588   9.5248  False
-architectureC       control -17.8208    0.0 -23.8626 -11.7791   True
-architectureD architectureE  -6.7685 0.0179 -12.8103  -0.7267   True
-architectureD       control -28.0724    0.0 -34.1142 -22.0306   True
-architectureE       control -21.3039    0.0 -27.3457 -15.2621   True
---------------------------------------------------------------------
+C(architecture)   83448.720765    4.0  87.382659  <0.001
+Residual         118178.816452  495.0        NaN     NaN
 
 ANOVA results for rank 8:
-                        sum_sq     df          F  PR(>F)
-C(architecture)  143641.733212    5.0  92.710684  <0.001
-Residual         184063.337627  594.0        NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 8:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB  -2.3191 0.9383  -9.4366   4.7984  False
-architectureA architectureC -26.5955    0.0  -33.713  -19.478   True
-architectureA architectureD  20.2367    0.0  13.1192  27.3541   True
-architectureA architectureE   15.116    0.0   7.9985  22.2335   True
-architectureA       control  -9.3327 0.0027 -16.4502  -2.2152   True
-architectureB architectureC -24.2764    0.0 -31.3939  -17.159   True
-architectureB architectureD  22.5557    0.0  15.4383  29.6732   True
-architectureB architectureE  17.4351    0.0  10.3176  24.5525   True
-architectureB       control  -7.0136 0.0561 -14.1311   0.1039  False
-architectureC architectureD  46.8322    0.0  39.7147  53.9497   True
-architectureC architectureE  41.7115    0.0   34.594   48.829   True
-architectureC       control  17.2629    0.0  10.1454  24.3803   True
-architectureD architectureE  -5.1207 0.3116 -12.2382   1.9968  False
-architectureD       control -29.5693    0.0 -36.6868 -22.4518   True
-architectureE       control -24.4487    0.0 -31.5661 -17.3312   True
---------------------------------------------------------------------
+                        sum_sq     df         F  PR(>F)
+C(architecture)  114444.440570    4.0  84.56637  <0.001
+Residual         167472.005765  495.0       NaN     NaN
 
 ANOVA results for rank 9:
                         sum_sq     df           F  PR(>F)
-C(architecture)  483827.540739    5.0  229.545935  <0.001
-Residual         250401.784861  594.0         NaN     NaN
-
-Post-hoc (TukeyHSD) Results for rank 9:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB  25.3295    0.0  17.0279  33.6311   True
-architectureA architectureC  -27.137    0.0 -35.4386 -18.8354   True
-architectureA architectureD  54.1982    0.0  45.8966  62.4998   True
-architectureA architectureE  41.8724    0.0  33.5708   50.174   True
-architectureA       control  -6.7591 0.1845 -15.0607   1.5425  False
-architectureB architectureC -52.4665    0.0 -60.7681 -44.1649   True
-architectureB architectureD  28.8688    0.0  20.5672  37.1704   True
-architectureB architectureE   16.543    0.0   8.2414  24.8445   True
-architectureB       control -32.0886    0.0 -40.3902  -23.787   True
-architectureC architectureD  81.3352    0.0  73.0336  89.6368   True
-architectureC architectureE  69.0094    0.0  60.7078   77.311   True
-architectureC       control  20.3779    0.0  12.0763  28.6795   True
-architectureD architectureE -12.3258 0.0004 -20.6274  -4.0242   True
-architectureD       control -60.9574    0.0  -69.259 -52.6558   True
-architectureE       control -48.6316    0.0 -56.9332   -40.33   True
---------------------------------------------------------------------
+C(architecture)  394468.541019    4.0  223.171629  <0.001
+Residual         218735.160271  495.0         NaN     NaN
 
 ANOVA results for rank 10:
                         sum_sq     df            F  PR(>F)
-C(architecture)  470297.779388    5.0  1220.296603  <0.001
-Residual          45785.078856  594.0          NaN     NaN
+C(architecture)  424999.168735    4.0  1234.145956  <0.001
+Residual          42615.419093  495.0          NaN     NaN
 
-Post-hoc (TukeyHSD) Results for rank 10:
-        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
-====================================================================
-    group1        group2    meandiff p-adj   lower    upper   reject
---------------------------------------------------------------------
-architectureA architectureB  49.9968    0.0   46.447  53.5466   True
-architectureA architectureC -19.8544    0.0 -23.4042 -16.3046   True
-architectureA architectureD  55.7465    0.0  52.1967  59.2963   True
-architectureA architectureE  42.6346    0.0  39.0848  46.1845   True
-architectureA       control  10.7099    0.0   7.1601  14.2597   True
-architectureB architectureC -69.8512    0.0 -73.4011 -66.3014   True
-architectureB architectureD   5.7497 0.0001   2.1999   9.2995   True
-architectureB architectureE  -7.3622    0.0  -10.912  -3.8124   True
-architectureB       control -39.2869    0.0 -42.8367 -35.7371   True
-architectureC architectureD   75.601    0.0  72.0512  79.1508   True
-architectureC architectureE  62.4891    0.0  58.9393  66.0389   True
-architectureC       control  30.5643    0.0  27.0145  34.1141   True
-architectureD architectureE -13.1119    0.0 -16.6617  -9.5621   True
-architectureD       control -45.0366    0.0 -48.5864 -41.4868   True
-architectureE       control -31.9247    0.0 -35.4745 -28.3749   True
---------------------------------------------------------------------
+Post-hoc (Tukeyhsd) Results:
+              architectureA architectureB architectureC architectureD control
+architectureA         1.000         0.000         0.000         0.000   0.000
+architectureB         0.000         1.000         1.000         0.000   0.000
+architectureC         0.000         1.000         1.000         1.000   0.000
+architectureD         0.000         0.000         1.000         1.000   1.000
+control               0.000         0.000         0.000         1.000   1.000
